@@ -7,13 +7,6 @@
     src: url("../Assets/font/Roboto-Light.ttf"); 
 }
 /*pongo media queries que adapten los componentes y estilados que adapten a una version mobile*/
-/*@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones}
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.}
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones}
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops}
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops}
-@media (min-width:1281px) { /* hi-res laptops and desktops}
-/*agregar grid aca*/
 /*para version mobile lo mejor es poner todos los rows en auto
 row-gap: 10px; /*para separar entre filas*/
 body{
@@ -87,7 +80,6 @@ main{
     background-color:rgb(206, 185, 162);
     padding: 2%;
 }
-/*galeria de imagenes*/
 .spotifyPlayer{
     width: 100%;
     padding: 10px;
@@ -165,7 +157,7 @@ main{
     padding-bottom: 5%;
     text-align: center;
 }
-/*botoned de la tienda*/
+/*botones de la tienda*/
 .linkshop{
     background-color: rgb(227, 146, 60);
     font-weight: bold;
