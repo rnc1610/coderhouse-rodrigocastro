@@ -18,12 +18,12 @@
 row-gap: 10px; /*para separar entre filas*/
 body{
     font-family: "Roboto";
-    background-color:rgb(206, 185, 162);
+    background-color:rgb(253, 210, 44);
     padding: 0;
     margin: 0;
 }
 header{
-    background-image: linear-gradient(rgb(227, 146, 60), rgb(206, 185, 162));
+    background-image: linear-gradient(rgba(199, 185, 128),rgb(253, 210, 44));
     height: 15vh;
     background-repeat: no-repeat;
     /*para fijar el header*/
@@ -65,7 +65,7 @@ header{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: linear-gradient(rgb(227, 146, 60), rgb(206, 185, 162));
+    background-color: linear-gradient(rgb(253, 210, 44), rgb(199, 185, 128));
 }
 li{
     float: left;
@@ -80,11 +80,11 @@ li a {
     text-decoration: none;
 }
 li a:hover {
-    background-color: linear-gradient(rgb(227, 146, 60), rgb(206, 185, 162));
+    background-color: linear-gradient(rgb(253, 210, 44), rgb(206, 185, 162));
     zoom: 115%;
 }
 main{
-    background-color:rgb(206, 185, 162);
+    background-color:rgb(253, 210, 44);
     padding: 2%;
 }
 /*galeria de imagenes*/
@@ -192,7 +192,7 @@ main{
     padding: 5px;
 }*/
 footer{
-    background-image: linear-gradient(rgb(206, 185, 162),rgba(227, 146, 60, 0.993));
+    background-image: linear-gradient(rgb(253, 210, 44),rgba(199, 185, 128));
     text-decoration: none;
     text-align: center;
     height: 13vh;
