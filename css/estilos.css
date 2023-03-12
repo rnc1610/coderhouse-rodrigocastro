@@ -40,7 +40,7 @@ main{
 .titulo_galeria{
     margin: 5px;
 }
-.gallery {
+/*.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
@@ -59,7 +59,7 @@ main{
 .desc {
     padding: 15px;
     text-align: center;
-}
+}*/
 /*videos en galeria*/
 .titulo_video{
     font-size: 20px;
