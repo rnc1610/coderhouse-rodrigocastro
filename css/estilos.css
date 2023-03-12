@@ -1,36 +1,17 @@
 /*Agregar comentarios a cada seccion en html y css*/
-* {
-    box-sizing: border-box;
-  }
 @font-face { 
     font-family: "Roboto"; 
     src: url("../Assets/font/Roboto-Light.ttf"); 
 }
-/*pongo media queries que adapten los componentes y estilados que adapten a una version mobile*/
-/*@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones}
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.}
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones}
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops}
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops}
-@media (min-width:1281px) { /* hi-res laptops and desktops}
-/*agregar grid aca*/
-/*para version mobile lo mejor es poner todos los rows en auto
-row-gap: 10px; /*para separar entre filas*/
 body{
     font-family: "Roboto";
     background-color:floralwhite;
 }
+.container-fluid{
+    padding: 0;
+}
 header{
     height: 12vh;
-}
-.nav_bold{
-    font-size: x-large;
-    text-decoration: none;
-    color: black;
-}
-.nav_bold:hover{
-    font-weight: bolder;
-    color: gray;
 }
 .gradient_main{
     background-color:  #FDD22C;
@@ -38,15 +19,9 @@ header{
 }
 main{
     background-color:floralwhite;
-    padding: 0%;
 }
 .titulo_bold{
     font-weight: bolder;
-}
-/*galeria de imagenes*/
-.spotifyPlayer{
-    width: 100%;
-    padding: 10px;
 }
 /*galeria de imagenes*/
 .titulo_galeria{
@@ -72,6 +47,7 @@ main{
     padding: 15px;
     text-align: center;
 }
+/*videos en galeria*/
 .titulo_video{
     font-size: 20px;
     margin: 5px;
@@ -148,16 +124,28 @@ main{
     padding: 5px;
 }*/
 footer{
-    background-color:floralwhite;
     text-decoration: none;
+    background-color:floralwhite;
     text-align: center;
-    height: 13vh;
+    height: 8vh;
     bottom: 0;
-    font-size: 23px;
+    font-size: 25px;
     font-family: Calibri, sans-serif;
 }
-.linkNav{
+.footerlinks{
+    font-family: "Roboto";
+    padding-left: 2%;
+    padding-right: 2%;
+    display:inline-block
+}
+.footer_link_decoration{
     text-decoration: none;
+    color: black;
+    font-family: "Roboto";
+    font-weight: bolder ;
+}
+.footer_link_decoration:hover{
+    color: gray;
 }
 /* para usar id e invocarlo utilizo #NombreDelId el id es el mas especifico*/
 /*regla de padres e hijos - que tag esta dentro de otra, por ejemplo <a> dentro de <div> / si lo hijos tienen propiedades no heredan de los padres*/
