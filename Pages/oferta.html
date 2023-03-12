@@ -5,12 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tienda</title>
+         <!-- Bootstrap CSS la de bootstrap va primero -->
+         <link href="./css/bootstrap.min.css" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="header">
+        <header class="sticky-top">
             <div class="hijo1">
                 <img src="../Assets/img/alf-logo-1551FD0D0F-seeklogo.com.png" alt="Logo" width="100">
             </div>
@@ -68,7 +70,7 @@
                     </div>
                   </div>
         </main>
-    <footer>
+    <footer class="sticky-bottom">
             <div>
               <i class="fa-brands fa-instagram"></i>
               <a class="linkNav" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
@@ -79,5 +81,6 @@
             </div>
             <p>Todos los derechos reservados</p>
     </footer>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
     </body>
 </html>
