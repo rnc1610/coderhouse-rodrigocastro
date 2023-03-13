@@ -32,8 +32,26 @@ header{
 }
 main{
     background-color:floralwhite;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .titulo_bold{
+    font-weight: bolder;
+}
+.titulo_formulario{
+    font-weight: bolder;
+    color: white;
+    background-color: #3E7CA3;
+    text-align: center; 
+}
+.titulo_contacto{
+    font-weight: bolder;
+}
+.parrafo_contacto{
+    font-size: x-large;
+}
+.boton_enviar{
+    color:white;
     font-weight: bolder;
 }
 /*galeria de imagenes*/
@@ -140,8 +158,6 @@ footer{
     text-decoration: none;
     background-color:floralwhite;
     text-align: center;
-    height: 8vh;
-    bottom: 0;
     font-size: 25px;
     font-family: Calibri, sans-serif;
 }
