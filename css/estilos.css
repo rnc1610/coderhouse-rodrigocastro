@@ -59,10 +59,40 @@ main{
     color:white;
     font-weight: bolder;
 }
-/*galeria de imagenes*/
-.titulo_galeria{
-    margin: 5px;
+#row_background{
+    background-color: #3E7CA3;
 }
+#row_background2{
+    background-color:#7ca6c2;
+}
+#mapa{
+    align-items: end;
+}
+#fecha{
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+#comprar{
+    color: white;
+    font-weight: bolder;
+    background-color: #01436b
+}
+#estadio{
+    text-align: left;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+#estadiosub{
+    text-align: left;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+/*galeria de imagenes*/
+
 /*.gallery {
     margin: 5px;
     border: 1px solid #ccc;
