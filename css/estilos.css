@@ -67,6 +67,8 @@ main{
 }
 #mapa{
     align-items: end;
+    justify-content: center;
+    
 }
 #fecha{
     text-align: center;
