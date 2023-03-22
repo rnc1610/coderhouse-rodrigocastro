@@ -5,79 +5,118 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tienda</title>
+         <!-- Bootstrap CSS la de bootstrap va primero -->
+         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <header class="header">
-            <div class="hijo1">
-                <img src="../Assets/img/alf-logo-1551FD0D0F-seeklogo.com.png" alt="Logo" width="100">
-            </div>
-            <div class="hijo2"> 
-                <img src="../Assets/img/alf_top_right_banner.png" alt="Logo Alf 2" height="85">
-            </div>
-            <nav class="hijo3"> 
-              <ul class="nav">
-                <li><a href="../index.html" class="nav">Inicio</a></li>
-                <li><a href="./tour.html" class="nav">Tour</a></li>
-                <li><a href="./oferta.html" class="nav">Tienda</a></li>
-                <li><a href="./galeria.html" class="nav">Galeria</a></li>
-                <li><a href="./contactanos.html" class="nav">Contactanos</a></li>
-            </ul>
-            </nav>
-        </header>   
-        <section>
-            <section>
-                <h1 class="titulo_tienda">Tienda</h1>
+    <body class="container-fluid">
+      <!--comentario que no se ve facil-->  
+      <!--para agregar imagenes, uso esta estructura - img src="./Assets/img/index.jpg" alt="">-->
+      <!--container fluid ocupa 100% del ancho de la pantalla, container centra y no utiliza el 100%-->
+      <header class="sticky-top" class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3E7CA3;">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <a class="navegador" href="../index.html"><img src="../Assets/img/alf_top_right_banner.png" height="70"></a>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" href="../Pages/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="./oferta.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="./tour.html">Tour</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="./contactanos.html">Contactanos</a>
+                  </li>
+                  </ul>
+                </div>
+              </div>
+      </header> 
+      <main>
+        <div class="container-fluid">
+            <div class="row">
+                <h3><strong>Tienda</strong></h3>
                     <!--para multilinea alt +z
                     para grabar crtl+s-->
-                <p class="parrafo_tienda">Creiste que despues de los 90's en la gloria del menemismo y el vino con soda nunca mas ibas a poder comprarte merchandising de Alf? Pues creiste mal, chequea la seleccion de exclusivos productos traidos directamente desde Melmac.</p>
-            </section>
-                <div>
-                    <h2 class="titulo_tienda">Envios gratis a ituzaingo...y no hay problemaaa</h2>
-                </div>
-                <div class="row">
-                    <div class="column">
-                      <div class="content">
-                        <img src="../Assets/img/alf_shop_item1.webp" alt="Producto1" style="width:100%" height="250px">
-                        <a class="linkshop" href="https://animegami.es/products/alf-action-figure-ultimate-alf-15-cm?variant=42517529755870&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&gclid=Cj0KCQiAi8KfBhCuARIsADp-A54SIVq7OCK4fCHcibzKgRkDG9HtUGaj26AhZc1Qh7h7haiMXaWu9UMaAh-IEALw_wcB&shpxid=f9602145-20ef-4a3a-8057-29f9cc54edad" 
-                        target="_blank">Comprar</a>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="content">
-                        <img src="../Assets/img/alf_shop_item2.webp" alt="Producto2" style="width:100%" height="250px">
-                        <a class="linkshop" href=https://es.aliexpress.com/item/1005002123608251.html?pdp_npi=2%40dis%21EUR%21%E2%82%AC%2014%2C29%21%E2%82%AC%209%2C33%21%21%21%21%21%400b0a23ae16767575156085534ef032%2112000018817017827%21btf&_t=pvid%3Af2aa5d1c-238e-4772-b711-fbd6eb8671f1&afTraceInfo=1005002123608251__pc__pcBridgePPC__xxxxxx__1676757515&spm=a2g0o.ppclist.product.mainProduct&gatewayAdapt=glo2esp 
-                        target="_blank">Comprar</a>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="content">
-                        <img src="../Assets/img/alf_shop_item3" alt="Producto3" style="width:100%" height="250px">
-                        <a class="linkshop" href="https://www.halloweencostumes.com/plus-size-alf-costume.html?mpid=172102&srsltid=Ad5pg_FlE9deGuzg8WII1ET1YEnRrDh1nE7WMy_1r7yQ7fQztog0c2jJ2Ws"
-                        target="_blank">Comprar</a>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <div class="content">
-                        <img src="../Assets/img/alf_shop_item4" alt="Producto4" style="width:100%" height="250px">
-                        <a class="linkshop" href="https://www.fnac.es/a8852976/Pack-Alf-Serie-Completa-Figura-Postales-DVD-Exclusivo-Fnac?ORIGIN=GOO_PMAX_D_BRAND_AG&gclid=Cj0KCQiAi8KfBhCuARIsADp-A55WvnhQsQtVCn6m2rn1qI9977Gy-ra770VXfI5gH7wlk4Cd1b4YuI4aAsncEALw_wcB&gclsrc=aw.ds" 
-                        target="_blank">Comprar</a>
-                      </div>
+                <p class="parrafo_contacto">Creiste que despues del exito de Alf en los 90's nunca mas ibas a poder comprarte merchandising de la serie? Pues creiste mal, chequea la seleccion de exclusivos productos traidos directamente desde Melmac.</p>
+                <p class="parrafo_contacto"><strong>Envios gratis a todo el pais</strong>...y no hay problemaaa!!</p>
+            </div>
+        </div>
+            <div class="container centerprod">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-sm text-center mb-3">
+                  <div class="card">
+                    <img src="../Assets/img/alf_shop_item1.webp" class="card-img-top" alt="figura alf">
+                    <div class="card-body">
+                      <h5 class="card-title">Figura de accion Alf</h5>
+                      <p class="card-text">¡Llévate a casa tu propia forma de vida alienígena con esta figura de acción definitiva de ALF, el visitante favorito de todos del planeta Melmac!</p>
+                      <a href="https://animegami.es/products/alf-action-figure-ultimate-alf-15-cm?variant=42517529755870&utm_source=google&utm_medium=cpc&utm_campaign=Google+Shopping&gclid=Cj0KCQiAi8KfBhCuARIsADp-A54SIVq7OCK4fCHcibzKgRkDG9HtUGaj26AhZc1Qh7h7haiMXaWu9UMaAh-IEALw_wcB&shpxid=f9602145-20ef-4a3a-8057-29f9cc54edad" class="btn btn-primary" id="comprar" target="_blank" role="button">Comprar</a>
                     </div>
                   </div>
-        </main>
-    <footer>
-            <div>
-              <i class="fa-brands fa-instagram"></i>
-              <a class="linkNav" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
-              <i class="fa-brands fa-youtube"></i>
-              <a class="linkNav" href="https://www.youtube.com/watch?v=IXFFh4m4QGM" target="_blank">Youtube</a>
-              <i class="fa-brands fa-facebook"></i>
-              <a class="linkNav" href="https://www.facebook.com/AlfMovieOfficial/" target="_blank">Facebook</a>
+                </div>
+                <div class="col-sm text-center mb-3">
+                  <div class="card">
+                    <img src="../Assets/img/alf_shop_item2.webp" class="card-img-top" alt="remera de alf">
+                    <div class="card-body">
+                      <h5 class="card-title">Remera de Alf unisex</h5>
+                      <p class="card-text">Camiseta informal Alf Guru de alta calidad para hombre, ropa de calle de verano, camiseta con cuello redondo, camiseta de talla grande para Navidad</p>
+                      <a href="https://es.aliexpress.com/item/4000370222091.html?pdp_npi=2%40dis%21PLN%2167%2C22%20z%C5%82%2130%2C92%20z%C5%82%21%21%21%21%21%400b0a2e9c16789904831661849ecb64%2110000001512051657%21btf&_t=pvid%3A5ecaf92c-22ae-401d-b32b-2a30acaeac9f&afTraceInfo=4000370222091__pc__pcBridgePPC__xxxxxx__1678990483&spm=a2g0o.ppclist.product.mainProduct&gatewayAdapt=glo2pol" class="btn btn-primary" id="comprar" target="_blank" role="button">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm text-center mb-3">
+                  <div class="card">
+                    <img src="../Assets/img/alf_shop_item3" class="card-img-top" alt="disfraz alf">
+                    <div class="card-body">
+                      <h5 class="card-title">Disfraz adulto Alf</h5>
+                      <p class="card-text">¡Oculta a tus gatos y vístete con este exclusivo disfraz de ALF para mostrar tu amor por tu alienígena favorito de la televisión de los 80!</p>
+                      <a href="https://www.halloweencostumes.com/plus-size-alf-costume.html?mpid=172102&srsltid=Ad5pg_FlE9deGuzg8WII1ET1YEnRrDh1nE7WMy_1r7yQ7fQztog0c2jJ2Ws" class="btn btn-primary" id="comprar" target="_blank" role="button">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm text-center mb-2">
+                  <div class="card">
+                    <img src="../Assets/img/alf_shop_item4" class="card-img-top" alt="disfraz alf">
+                    <div class="card-body">
+                      <h5 class="card-title">Alf Serie Completa (DVD)</h5>
+                      <p class="card-text">Serie de TV (1986-1990). 4 temporadas - caja con figura de Alf, postales y los DVD de las 4 temporadas de la serie.</p>
+                      <a href="https://www.fnac.es/a8852976/Pack-Alf-Serie-Completa-Figura-Postales-DVD-Exclusivo-Fnac" class="btn btn-primary" id="comprar" target="_blank" role="button">Comprar</a>
+                    </div>
+                  </div>
+                </div>
             </div>
-            <p>Todos los derechos reservados</p>
-    </footer>
+          
+            </div>
+        </main>
+        <footer class="sticky-bottom">
+          <div class="footerlinks">
+              <i class="fa-brands fa-instagram" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank"></i>
+              <a class="footer_link_decoration" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
+          </div>
+          <div class="footerlinks">
+              <i class="fa-brands fa-youtube"></i>
+              <a  class="footer_link_decoration" href="https://www.youtube.com/watch?v=IXFFh4m4QGM" target="_blank">Youtube</a>
+          </div>
+          <div class="footerlinks">
+              <i class="fa-brands fa-facebook"></i>
+              <a class="footer_link_decoration" href="https://www.facebook.com/AlfMovieOfficial/" target="_blank">Facebook</a>
+          </div>
+          <div class="bottom_text">
+              <p>Todos los derechos reservados</p>
+          </div>
+      </footer>
+      <script src="../JS/bootstrap.bundle.min.js"></script>
+      <!--Aplicar bootstrap en todas las paginas-->
     </body>
 </html>

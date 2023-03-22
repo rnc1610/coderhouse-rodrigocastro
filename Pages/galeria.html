@@ -5,103 +5,121 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Galeria</title>
+        <!-- Bootstrap CSS la de bootstrap va primero -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../css/estilos.css">
         <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <header class="header">
-            <div class="hijo1">
-                <img src="../Assets/img/alf-logo-1551FD0D0F-seeklogo.com.png" alt="Logo" width="100">
-            </div>
-            <div class="hijo2"> 
-                <img src="../Assets/img/alf_top_right_banner.png" alt="Logo Alf 2" height="85">
-            </div>
-            <nav class="hijo3"> 
-                <ul class="nav">
-                    <li><a href="../index.html" class="nav">Inicio</a></li>
-                    <li><a href="./tour.html" class="nav">Tour</a></li>
-                    <li><a href="./oferta.html" class="nav">Tienda</a></li>
-                    <li><a href="./galeria.html" class="nav">Galeria</a></li>
-                    <li><a href="./contactanos.html" class="nav">Contactanos</a></li>
-                </ul>
-            </nav>
-        </header>
+    <body class="container-fluid">
+      <!--comentario que no se ve facil-->  
+      <!--para agregar imagenes, uso esta estructura - img src="./Assets/img/index.jpg" alt="">-->
+      <!--container fluid ocupa 100% del ancho de la pantalla, container centra y no utiliza el 100%-->
+      <header class="sticky-top" class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3E7CA3;">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <a class="navegador" href="../index.html"><img src="../Assets/img/alf_top_right_banner.png" height="70"></a>
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" href="../Pages/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="./oferta.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="./tour.html">Tour</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active navlinks" aria-current="page" href="./contactanos.html">Contactanos</a>
+                  </li>
+                  </ul>
+                </div>
+              </div>
+      </header>
             <main>
-                <h1 class="titulo_galeria">Galeria de Imagenes</h1>
-                <!--imagenes-->
-
-                <!--Test carousel--> 
-                <div class="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../Assets/img/alf rock 2.jpg" alt="Afl Rockanrolleando 2" width="600" height="400">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm">
+                <h3 class="titulo_galeria"><strong>Galeria de Imagenes</strong></h3>
+                </div>
+                </div>
+              </div>
+              <!--imagenes carousel bootstrap-->
+              <div class="container centercar">
+                    <div id="carouselfotosalf" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselfotosalf" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselfotosalf" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselfotosalf" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="carousel-img" src="../Assets/img/Alfhq2.jpg" alt="alf pulgar arriba">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="carousel-img" src="../Assets/img/Alfhq3.jpg" alt="alf sonriendo">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="carousel-img" src="../Assets/img/carousel3.jpg" alt="alf pulgar arriba con fondo con texto">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselfotosalf" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselfotosalf" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+              </div>
+              <!--videos-->
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm"></div>
+                      <H3><strong>Videos recomendados</strong></H3>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../Assets/img/alf rock.jfif" alt="Afl Rockanrolleando 1" width="600" height="400">
+                  </div>
+                  <div class="container">
+                  <div class="row">
+                    <div class="col-sm text-center">    
+                        <iframe src="https://www.youtube.com/embed/CozoPjQ_sH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                    <div class="carousel-item">
-                      <!-- Aquí irá la tercera diapositiva -->
-                   </div>
-                </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                   <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   <span class="sr-only">Next</span>
-                </a>
-             </div>
-               
-            <!--test-->
-            <div>
-                <div class="gallery">
-                  <a target="_blank">
-                    <img src="../Assets/img/alf rock 2.jpg" alt="Afl Rockanrolleando 2" width="600" height="400">
-                  </a>
-                  <div class="desc">Alf 1</div>
-                </div>
-                <div class="gallery">
-                  <a target="_blank">
-                    <img src="../Assets/img/alf rock.jfif" alt="Afl Rockanrolleando 1" width="600" height="400">
-                  </a>
-                  <div class="desc">Alf 2</div>
-                </div>
-                <div class="gallery">
-                  <a target="_blank">
-                    <img src="../Assets/img/alf rock 3.jfif" alt="Afl Rockanrolleando 3" width="600" height="400">
-                  </a>
-                  <div class="desc">Alf 3</div>
-                </div>
-            </div>
-            <!--endtest-->
-            <!--videos-->
-            <section>
-                <div class="titulo_video">
-                    <H2>Videos de Alfiooo</H2>
-                </div>
-                    <div class="video1">    
-                        <iframe width="350" height="200" src="https://www.youtube.com/embed/CozoPjQ_sH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <div class="video2">
-                        <iframe width="350" height="200" src="https://www.youtube.com/embed/N7hfv7nl9vM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="col-sm text-center">
+                        <iframe src="https://www.youtube.com/embed/N7hfv7nl9vM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>       
-                    <div class="video2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JujDsTnzeYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>      
-            </section>    
+                    <div class="col-sm text-center">
+                        <iframe src="https://www.youtube.com/embed/AY2JPhmp6iw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  </div>
+                </div>        
             </main>
-        <footer>
-                <div>
-                <i class="fa-brands fa-instagram"></i>
-                <a class="linkNav" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
-                <i class="fa-brands fa-youtube"></i>
-                <a class="linkNav" href="https://www.youtube.com/watch?v=IXFFh4m4QGM" target="_blank">Youtube</a>
-                <i class="fa-brands fa-facebook"></i>
-                <a class="linkNav" href="https://www.facebook.com/AlfMovieOfficial/" target="_blank">Facebook</a>
-                </div>
-                <p>Todos los derechos reservados</p>
-        </footer>
+      <footer class="sticky-bottom">
+              <div class="footerlinks">
+                  <i class="fa-brands fa-instagram" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank"></i>
+                  <a class="footer_link_decoration" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
+              </div>
+              <div class="footerlinks">
+                  <i class="fa-brands fa-youtube"></i>
+                  <a  class="footer_link_decoration" href="https://www.youtube.com/watch?v=IXFFh4m4QGM" target="_blank">Youtube</a>
+              </div>
+              <div class="footerlinks">
+                  <i class="fa-brands fa-facebook"></i>
+                  <a class="footer_link_decoration" href="https://www.facebook.com/AlfMovieOfficial/" target="_blank">Facebook</a>
+              </div>
+              <div class="bottom_text">
+                  <p>Todos los derechos reservados</p>
+              </div>
+          </footer>
+          <script src="../JS/bootstrap.bundle.min.js"></script>
+          <!--Aplicar bootstrap en todas las paginas-->
     </body>
 </html>
