@@ -1,109 +1,112 @@
 /*Agregar comentarios a cada seccion en html y css*/
+* {
+    box-sizing: border-box;
+  }
 @font-face { 
     font-family: "Roboto"; 
     src: url("../Assets/font/Roboto-Light.ttf"); 
 }
+/*pongo media queries que adapten los componentes y estilados que adapten a una version mobile*/
+/*para version mobile lo mejor es poner todos los rows en auto
+row-gap: 10px; /*para separar entre filas*/
 body{
     font-family: "Roboto";
-    background-color:floralwhite;
-}
-.container-fluid{
+    background-color:rgb(253, 210, 44);
     padding: 0;
+    margin: 0;
 }
 header{
-    height: 12vh;
+    background-image: linear-gradient(rgba(199, 185, 128),rgb(253, 210, 44));
+    height: 15vh;
+    background-repeat: no-repeat;
+    /*para fijar el header*/
+    position: sticky;
+    top: 0px;
 }
-.navegador{
-    padding-left: 2%;
-    padding-right: 2%;
+.header{
+    height: 15vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.hijo1{
+    order: 1;
+    margin: auto;
+}
+.hijo2{
+    order: 3;
+    margin: auto;
+    padding-top: 0.34rem;
+}
+.hijo3{
+    order: 2;
+    margin: auto;
+}
+.background_image{
+    position: relative;
+    opacity: 0.6;
+}
+.nav{
+    font-size: 2.3rem;
+    font-family:  Calibri,sans-serif;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    padding-right: 2%;
-    padding-left: 2%;
-    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: linear-gradient(rgb(253, 210, 44), rgb(199, 185, 128));
 }
-.navlinks{
-    color: white !important;
-    font-weight: bolder !important;
-    font-size:x-large;
+li{
+    float: left;
+    padding: 5px
 }
-.gradient_main{
-    background-color:  #FDD22C;
-    font-size: x-large;
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: linear-gradient(rgb(253, 210, 44), rgb(206, 185, 162));
+    zoom: 115%;
 }
 main{
-    background-color:floralwhite;
-    padding-top: 20px;
+    background-color:rgb(253, 210, 44);
+    padding: 2%;
 }
-.parrafo_index{
-    font-size: large;
-}
-.titulo_bold{
-    font-weight: bolder;
-}
-.titulo_formulario{
-    font-weight: bold;
-    color: white;
-    background-color: #3E7CA3;
-    text-align: center; 
-}
-.titulo_contacto{
-    font-weight: bold;
-}
-.parrafo_contacto{
-    font-size: large;
-}
-.test{
-    padding-left: 200px;
-}
-.boton_enviar{
-    color:white;
-    font-weight: bolder;
-}
-#row_background{
-    background-color: #3E7CA3;
-}
-#row_background2{
-    background-color:#7ca6c2;
-}
-#mapa{
-    align-items: end;
-    justify-content: center;
-}
-#fecha{
-    text-align: center;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-}
-#comprar{
-    color: white;
-    font-weight: bolder;
-    background-color: #01436b
-}
-#estadio{
-    text-align: left;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-}
-#estadiosub{
-    text-align: left;
-    color: white;
-    font-size: small;
-    font-weight: bold;
+.spotifyPlayer{
+    width: 100%;
+    padding: 10px;
 }
 /*galeria de imagenes*/
-.centercar{
-    display: flex;
+.titulo_galeria{
+    margin: 5px;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
     justify-content: center;
-}
-#carouselfotosalf{
-    height: 100%;
-    width: 80%;
-}
-.carousel-img{
+    width: 350px;
+}  
+.gallery:hover {
+    border: 1px solid #777;
+    background-color: beige;
+    zoom: 105%;
+}  
+.gallery img {
     width: 100%;
-    height: 80%;
+    height: auto;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
 }
 .titulo_video{
     font-size: 20px;
@@ -111,60 +114,86 @@ main{
     float: inline-start;
     width: 350px;
 }
-.videos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.video1{
+    margin: 5px;
+    height: auto;
+    display: inline;
+}
+.video2{
+    margin: 5px;
+    height: auto;
+    display: inline;
+}
+.video3{
+    margin: 5px;
+    height: auto;
+    display: inline;
 }
 /*Tienda grid*/
-.centerprod{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card{
-    width: 100%;
-    height: 100%;
-}
-.card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit:contain;
-}
-.card-title{
-    object-fit: contain;
+.row {
+    margin: 1%;
 }
 /* padding entre columnas */
 .row,
 .row > .column {
-    padding: 2%;
+    padding: 1%;
 }
 /*4 columnas de productos*/
 .column {
     float: left;
     width: 25%;
 }
-footer{
-    text-decoration: none;
-    background-color:floralwhite;
+/*Limpia los floats*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*bloques de contenido de la tienda*/
+.content {
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 5%;
     text-align: center;
+}
+/*botones de la tienda*/
+.linkshop{
+    background-color: rgb(227, 146, 60);
+    font-weight: bold;
+    color: white;
+    margin-top: 3%;
+    padding: 3% 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}  
+.titulo_tienda{
+    margin: 2%;
+    padding-top: 1%;
     font-size: larger;
+    font-weight: bolder;
+}
+.parrafo_tienda{
+    margin: 2%;
+    font-weight: bold;
+}
+/*Mapa
+.mapa{
+    display: inline-block;
+    padding: 5px;
+}*/
+footer{
+    background-image: linear-gradient(rgb(253, 210, 44),rgba(199, 185, 128));
+    text-decoration: none;
+    text-align: center;
+    height: 13vh;
+    bottom: 0;
+    font-size: 23px;
     font-family: Calibri, sans-serif;
 }
-.footerlinks{
-    font-family: "Roboto";
-    padding-left: 2%;
-    padding-right: 2%;
-    display:inline-block
-}
-.footer_link_decoration{
+.linkNav{
     text-decoration: none;
-    color: black;
-    font-family: "Roboto";
-    font-weight: bolder ;
-}
-.footer_link_decoration:hover{
-    color: gray;
 }
 /* para usar id e invocarlo utilizo #NombreDelId el id es el mas especifico*/
 /*regla de padres e hijos - que tag esta dentro de otra, por ejemplo <a> dentro de <div> / si lo hijos tienen propiedades no heredan de los padres*/
