@@ -8,65 +8,88 @@
         <!-- Bootstrap CSS la de bootstrap va primero -->
         <link href="./css/bootstrap.min.css" rel="stylesheet">
         <!--estilos hoja de estilos principal-->
-        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./SCSS/estilos.css">
         <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
         <!--favicon-->
-        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-        
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
     </head>
-    <body>
+    <body class="container-fluid">
         <!--comentario que no se ve facil-->  
         <!--para agregar imagenes, uso esta estructura - img src="./Assets/img/index.jpg" alt="">-->
         <!--container fluid ocupa 100% del ancho de la pantalla, container centra y no utiliza el 100%-->
-        <header class="container-fluid">
-                <div class="hijo1">
-                    <img src="./Assets/img/alf-logo-1551FD0D0F-seeklogo.com.png" alt="Logo" width="100">
-                </div>
-                <div class="hijo2"> 
-                    <img src="../Proyecto sitio web/Assets/img/alf_top_right_banner.png" alt="Logo Alf 2" height="85">
-                </div>
-                <nav class="hijo3"> 
-                    <ul class="nav">
-                        <li><a href="./index.html" class="nav">Inicio</a></li>
-                        <li><a href="./Pages/tour.html" class="nav">Tour</a></li>
-                        <li><a href="./Pages/oferta.html" class="nav">Tienda</a></li>
-                        <li><a href="./Pages/galeria.html" class="nav">Galeria</a></li>
-                        <li><a href="./Pages/contactanos.html" class="nav">Contactanos</a></li>
+        <header class="sticky-top" class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3E7CA3;">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="header_navegador" href="#"><img src="../Proyecto sitio web/Assets/img/alf_top_right_banner.png" height="70"></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active header_navlinks" id="hover" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active header_navlinks" href="./Pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active header_navlinks" aria-current="page" href="./Pages/oferta.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active header_navlinks" aria-current="page" href="./Pages/tour.html">Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active header_navlinks" aria-current="page" href="./Pages/contactanos.html">Contactanos</a>
+                    </li>
                     </ul>
-                </nav>
+                  </div>
+                </div>
         </header>
-        <main class="container">
-            <section>
-                <h1>La vida despues de la fama</h1>
-                <!--para multilinea alt +z
-                para grabar crtl+s-->
-                <p>Llegar a la cima a fines de los 80's, que la fama te acompañe en los 90's y despues que?...</p>
-                <p>Después de la finalización de la serie "Alf", se realizaron varios proyectos de películas y series, pero ninguno llegó a ser producido. En 1996, se hizo una película para televisión llamada "Proyecto: Alf", que seguía la historia de la serie pero no tuvo mucho éxito. En 2004, se planeó una nueva serie llamada "Alf: The Animated Series", pero fue cancelada antes de su producción.
-
-                <p>El creador de la serie, Paul Fusco, continuó trabajando en la industria del entretenimiento y también prestó su voz a Alf en varios proyectos posteriores, incluyendo comerciales y programas de televisión.</p>
-                    
-                En resumen, después de la serie "Alf", se intentaron varios proyectos de películas y series, pero ninguno llegó a concretarse y el futuro de la franquicia es incierto.</p>
-                <p>
-                <strong>En 2023 se lanza "Alf - la vida despues de la fama"</strong> es un show unipersonal con segmentos musicales donde se rememoran los mejores momentos de la serie y podremos adentrarnos en lo que paso despues. Una vida llena de altibajos, adicciones, problemas aventuras y por sobre todo diversion.</p>
-            </section>
-            <div class="imagen portada">
-                <img src="../Proyecto sitio web/Assets/img/Alfhq1.webp" alt="imagen banner principal Alf">
+        <main>
+            <div class="container-fluid">
+            <div class="gradient_main">
+                <div class="row align-items-center">
+                    <div class="col-sm">
+                        <h3 class="titulo_bold">La vida despues de la fama</h3>
+                        <!--para multilinea alt +z
+                        para grabar crtl+s-->
+                        <div class="parrafo_index">
+                        <p>Llegar a la cima a fines de los 80's, exito, gloria, que la fama te acompañe en los 90's y despues que?...</p>
+                        <p>Después de la finalización de la serie "Alf", se realizaron varios proyectos de películas y series, pero ninguno llegó a ser producido.</p>   
+                        <p>Tras años de intentos<strong> en 2023 se lanza "Alf - la vida despues de la fama"</strong> un show unipersonal con segmentos musicales donde se rememoran los mejores momentos de la serie y podremos adentrarnos en lo que paso despues. Una vida llena de altibajos, adicciones, problemas aventuras y por sobre todo diversion.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="../Proyecto sitio web/Assets/img/Alfhq1.webp" width=100% alt="imagen banner principal Alf">
+                    </div>
+                </div>
             </div>
-            <div>
-                <div class="spotifyPlayer">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3eEPZVZG9WKyqfnJaKk981?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="row">
+                <div class="col-sm">
+                    <iframe class="sizewidgets" src="https://www.youtube.com/embed/JujDsTnzeYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-sm">
+                    <iframe class="sizewidgets" src="https://open.spotify.com/embed/playlist/3eEPZVZG9WKyqfnJaKk981?utm_source=generator" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
+            </div> 
         </main>
-        <footer class="container-fluid">
-            <div linkNav>
+        <footer class="sticky-bottom">
+            <div class="footerlinks">
                 <i class="fa-brands fa-instagram" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank"></i>
-                <a href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
-                <i class="fa-brands fa-youtube"></i>
-                <a href="https://www.youtube.com/watch?v=IXFFh4m4QGM" target="_blank">Youtube</a>
-                <i class="fa-brands fa-facebook"></i>
-                <a href="https://www.facebook.com/AlfMovieOfficial/" target="_blank">Facebook</a>
+                <a class="footerlinks_linkDecorationi" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
             </div>
-            <p>Todos los derechos reservados</p>
+            <div class="footerlinks">
+                <i class="fa-brands fa-youtube"></i>
+                <a  class="footerlinks_linkDecorationy" href="https://www.youtube.com/watch?v=IXFFh4m4QGM" target="_blank">Youtube</a>
+            </div>
+            <div class="footerlinks">
+                <i class="fa-brands fa-facebook"></i>
+                <a class="footerlinks_linkDecorationf" href="https://www.facebook.com/AlfMovieOfficial/" target="_blank">Facebook</a>
+            </div>
+            <div class="bottom_text">
+                <p>Todos los derechos reservados</p>
+            </div>
         </footer>
         <script src="./JS/bootstrap.bundle.min.js"></script>
         <!--Aplicar bootstrap en todas las paginas-->

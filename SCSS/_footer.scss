@@ -1,0 +1,39 @@
+footer{
+    text-decoration: none;
+    background-color:$color-primario;
+    text-align: center;
+    font-size: larger;
+    .footerlinks{
+        font-family: "Roboto";
+        padding-left: 2%;
+        padding-right: 2%;
+        display:inline-block; 
+        .footerlinks_linkDecorationy{
+            text-decoration: none;
+            color: map-get($map: $colorsfooter, $key:"youtube" );
+            font-family: "Roboto";
+            font-weight: bolder ;
+            &:hover{
+                color: map-get($map: $colorsfooter, $key:"hover");
+            }
+        }
+        .footerlinks_linkDecorationi{
+            text-decoration: none;
+            color: map-get($map: $colorsfooter, $key:"instagram" );
+            font-family: "Roboto";
+            font-weight: bolder ;
+            &:hover{
+                color: map-get($map: $colorsfooter, $key:"hover");
+            }
+        }
+        .footerlinks_linkDecorationf{
+            text-decoration: none;
+            color: map-get($map: $colorsfooter, $key:"facebook" );
+            font-family: "Roboto";
+            font-weight: bolder ;
+            &:hover{
+                color: map-get($map: $colorsfooter, $key:"hover");
+            }
+        }
+    }
+}

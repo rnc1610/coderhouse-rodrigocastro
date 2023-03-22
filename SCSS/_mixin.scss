@@ -1,0 +1,9 @@
+@mixin iframe ($height){
+	height: $height;
+	width: 100%;
+	border-radius:12px;
+}
+.sizewidgets{
+    @include iframe (400px);
+}
+ 

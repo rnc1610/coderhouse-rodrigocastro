@@ -1,0 +1,206 @@
+/*variables*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../Assets/font/Roboto-Light.ttf");
+}
+body {
+  font-family: "Roboto";
+  background-color: rgb(255, 246, 230);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+header {
+  height: 12vh;
+}
+header .header_navegador {
+  padding-left: 2%;
+  padding-right: 2%;
+  text-decoration: none;
+  padding-right: 2%;
+  padding-left: 2%;
+  display: inline-block;
+}
+header .header_navlinks {
+  color: white !important;
+  font-weight: bolder !important;
+  font-size: x-large;
+}
+
+main {
+  background-color: rgb(255, 246, 230);
+  padding-top: 20px;
+}
+main .gradient_main {
+  background-color: #FDD22C;
+  font-size: x-large;
+}
+main .row,
+main .row > .column {
+  padding: 2%;
+}
+main .column {
+  float: left;
+  width: 25%;
+}
+
+footer {
+  text-decoration: none;
+  background-color: rgb(255, 246, 230);
+  text-align: center;
+  font-size: larger;
+}
+footer .footerlinks {
+  font-family: "Roboto";
+  padding-left: 2%;
+  padding-right: 2%;
+  display: inline-block;
+}
+footer .footerlinks .footerlinks_linkDecorationy {
+  text-decoration: none;
+  color: #f02323;
+  font-family: "Roboto";
+  font-weight: bolder;
+}
+footer .footerlinks .footerlinks_linkDecorationy:hover {
+  color: gray;
+}
+footer .footerlinks .footerlinks_linkDecorationi {
+  text-decoration: none;
+  color: #C25E30;
+  font-family: "Roboto";
+  font-weight: bolder;
+}
+footer .footerlinks .footerlinks_linkDecorationi:hover {
+  color: gray;
+}
+footer .footerlinks .footerlinks_linkDecorationf {
+  text-decoration: none;
+  color: #3a5795;
+  font-family: "Roboto";
+  font-weight: bolder;
+}
+footer .footerlinks .footerlinks_linkDecorationf:hover {
+  color: gray;
+}
+
+.parrafo_index {
+  font-size: large;
+}
+
+.titulo_bold {
+  font-weight: bolder;
+}
+
+.titulo_formulario {
+  font-weight: bold;
+  color: white;
+  background-color: #3E7CA3;
+  text-align: center;
+}
+
+.titulo_contacto {
+  font-weight: bold;
+}
+
+.parrafo_contacto {
+  font-size: large;
+}
+
+.boton_enviar {
+  color: white;
+  font-weight: bolder;
+}
+
+/*galeria de imagenes*/
+.centercar {
+  display: flex;
+  justify-content: center;
+}
+.centercar #carouselfotosalf {
+  height: 100%;
+  width: 80%;
+}
+.centercar .carousel-img {
+  width: 100%;
+  height: 80%;
+}
+
+#row_background {
+  background-color: #3E7CA3;
+}
+#row_background #mapa {
+  align-items: end;
+  justify-content: center;
+}
+#row_background #fecha {
+  text-align: center;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+#row_background #comprar {
+  color: white;
+  font-weight: bolder;
+  background-color: #01436b;
+}
+#row_background #estadio {
+  text-align: left;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+#row_background2 {
+  background-color: #7ca6c2;
+}
+#row_background2 #mapa {
+  align-items: end;
+  justify-content: center;
+}
+#row_background2 #fecha {
+  text-align: center;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+#row_background2 #comprar {
+  color: white;
+  font-weight: bolder;
+  background-color: #01436b;
+}
+#row_background2 #estadio {
+  text-align: left;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*Tienda grid*/
+.centerprod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerprod .card {
+  width: 100%;
+  height: 100%;
+}
+.centerprod .card .card-img-top {
+  width: 100%;
+  height: 15vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.centerprod .card .card-title {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.sizewidgets {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+}/*# sourceMappingURL=estilos.css.map */
