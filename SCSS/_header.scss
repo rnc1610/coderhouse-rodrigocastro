@@ -1,3 +1,26 @@
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 header{
     height: 12vh;
     .header_navegador{
@@ -7,6 +30,8 @@ header{
         padding-right: 2%;
         padding-left: 2%;
         display: inline-block;
+        animation: wiggle 2s;
+        animation-iteration-count: 2;
     }
     .header_navlinks{
         color: white !important;
@@ -14,7 +39,7 @@ header{
         font-size:x-large;
         &:hover{
             color: map-get($map: $colorsfooter, $key:"hover")!important;
-            zoom: 105%!important;
+            zoom: 103%!important;
         }
         &:focus{
             color: black!important;

@@ -13,6 +13,29 @@ body {
   padding: 0;
 }
 
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 header {
   height: 12vh;
 }
@@ -23,6 +46,8 @@ header .header_navegador {
   padding-right: 2%;
   padding-left: 2%;
   display: inline-block;
+  animation: wiggle 2s;
+  animation-iteration-count: 2;
 }
 header .header_navlinks {
   color: white !important;
@@ -31,7 +56,7 @@ header .header_navlinks {
 }
 header .header_navlinks:hover {
   color: rgb(83, 82, 82) !important;
-  zoom: 105% !important;
+  zoom: 103% !important;
 }
 header .header_navlinks:focus {
   color: black !important;
@@ -68,7 +93,7 @@ footer .footerlinks {
   padding-left: 2%;
   padding-right: 2%;
   display: inline-block;
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
 }
 footer .footerlinks .footerlinks_linkDecorationy {
   text-decoration: none;
@@ -104,6 +129,12 @@ footer .footerlinks .footerlinks_linkDecorationf:hover {
 
 .titulo_bold {
   font-weight: bolder;
+}
+
+#headerlogo {
+  animation-name: efecto_logo !important;
+  animation-duration: 5s !important;
+  animation-delay: 0s !important;
 }
 
 .titulo_formulario {
