@@ -5,7 +5,7 @@
 }
 body {
   font-family: "Roboto";
-  background-color: rgb(255, 246, 230);
+  background-image: linear-gradient(to top, #9db5c4, #a8c3c8, #bad0cb, #d1dcd1, #e6e7dd);
 }
 
 .container-fluid {
@@ -28,9 +28,12 @@ header .header_navlinks {
   font-weight: bolder !important;
   font-size: x-large;
 }
+header #gradiente {
+  background-image: linear-gradient(to right top, #0081cf, #00a6dc, #00c4b8, #45da77, #d4e139) !important;
+}
 
 main {
-  background-color: rgb(255, 246, 230);
+  background-color: linear-gradient(to top, #9db5c4, #a8c3c8, #bad0cb, #d1dcd1, #e6e7dd);
   padding-top: 20px;
 }
 main .gradient_main {
@@ -48,7 +51,7 @@ main .column {
 
 footer {
   text-decoration: none;
-  background-color: rgb(255, 246, 230);
+  background-color: linear-gradient(to top, #9db5c4, #a8c3c8, #bad0cb, #d1dcd1, #e6e7dd);
   text-align: center;
   font-size: larger;
 }
