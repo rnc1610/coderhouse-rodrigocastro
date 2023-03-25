@@ -226,6 +226,7 @@ footer .footerlinks .footerlinks_linkDecorationf:hover {
   height: 15vw;
   -o-object-fit: contain;
      object-fit: contain;
+  padding-top: 5px;
 }
 .centerprod .card .card-title {
   -o-object-fit: contain;
