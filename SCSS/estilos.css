@@ -1,4 +1,5 @@
 /*variables*/
+/*utilizo el codigo de abajo tambien para nav*/
 @font-face {
   font-family: "Roboto";
   src: url("../Assets/font/Roboto-Light.ttf");
@@ -27,6 +28,10 @@ header .header_navlinks {
   color: white !important;
   font-weight: bolder !important;
   font-size: x-large;
+}
+header .header_navlinks:hover {
+  color: rgb(83, 82, 82) !important;
+  zoom: 105% !important;
 }
 header #gradiente {
   background-image: linear-gradient(to right top, #0081cf, #00a6dc, #00c4b8, #45da77, #d4e139) !important;
@@ -69,7 +74,7 @@ footer .footerlinks .footerlinks_linkDecorationy {
   font-weight: bolder;
 }
 footer .footerlinks .footerlinks_linkDecorationy:hover {
-  color: gray;
+  color: rgb(83, 82, 82);
 }
 footer .footerlinks .footerlinks_linkDecorationi {
   text-decoration: none;
@@ -78,7 +83,7 @@ footer .footerlinks .footerlinks_linkDecorationi {
   font-weight: bolder;
 }
 footer .footerlinks .footerlinks_linkDecorationi:hover {
-  color: gray;
+  color: rgb(83, 82, 82);
 }
 footer .footerlinks .footerlinks_linkDecorationf {
   text-decoration: none;
@@ -87,7 +92,7 @@ footer .footerlinks .footerlinks_linkDecorationf {
   font-weight: bolder;
 }
 footer .footerlinks .footerlinks_linkDecorationf:hover {
-  color: gray;
+  color: rgb(83, 82, 82);
 }
 
 .parrafo_index {
