@@ -58,7 +58,7 @@ main {
   padding-top: 20px;
 }
 main .gradient_main {
-  background-color: #FDD22C;
+  background-image: linear-gradient(to left, #fdd22c, #fdd22c, #fdd22c, #fdd22c, #fdd22c, #fcd339, #fad445, #f9d54f, #f6d764, #f2d978, #efdb8a, #ecdc9c);
   font-size: x-large;
 }
 main .row,
@@ -113,6 +113,7 @@ footer .footerlinks .footerlinks_linkDecorationf:hover {
 
 .parrafo_index {
   font-size: large;
+  font-weight: bold;
 }
 
 .titulo_bold {
@@ -138,6 +139,7 @@ footer .footerlinks .footerlinks_linkDecorationf:hover {
 
 .parrafo_contacto {
   font-size: large;
+  font-weight: bold;
 }
 
 .boton_enviar {
