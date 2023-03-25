@@ -33,6 +33,9 @@ header .header_navlinks:hover {
   color: rgb(83, 82, 82) !important;
   zoom: 105% !important;
 }
+header .header_navlinks:focus {
+  color: black !important;
+}
 header #gradiente {
   background-image: linear-gradient(to right top, #0081cf, #00a6dc, #00c4b8, #45da77, #d4e139) !important;
 }
