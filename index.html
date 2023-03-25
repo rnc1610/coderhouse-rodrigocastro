@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="La pagina oficial donde se presenta el proyecto de Alf la vida despues de la fama, una pagina dedicada al show, publicidad de futuras fechas, venta de merchandising y formulario de contacto">
+        <meta name="keywords" content="alf, la vida despues de la fama, spotify alf playlist, escuela de series, videos de alf, shows en vivo">
         <title>Alf - La vida despues de la fama</title>
         <!-- Bootstrap CSS la de bootstrap va primero -->
         <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -12,13 +14,15 @@
         <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
         <!--favicon-->
         <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"> 
+        <!--animate style-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
     <body class="container-fluid">
         <!--comentario que no se ve facil-->  
         <!--para agregar imagenes, uso esta estructura - img src="./Assets/img/index.jpg" alt="">-->
         <!--container fluid ocupa 100% del ancho de la pantalla, container centra y no utiliza el 100%-->
-        <header class="sticky-top" class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3E7CA3;">
+        <header class="sticky-top container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light" style=" background-image: linear-gradient(to right, #3e7ca3, #5085a8, #618fad, #7198b2, #81a2b7);">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -60,7 +64,7 @@
                         </div>
                     </div>
                     <div class="col-sm">
-                        <img src="./Assets/img/alfhq1.webp" width=100% alt="imagen banner principal Alf">
+                        <img class="animate__animated animate__backInRight" src="./Assets/img/alfhq1.webp" width=100% alt="imagen banner principal Alf">
                     </div>
                 </div>
             </div>
@@ -75,6 +79,7 @@
             </div> 
         </main>
         <footer class="sticky-bottom">
+            <br>
             <div class="footerlinks">
                 <i class="fa-brands fa-instagram" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank"></i>
                 <a class="footerlinks_linkDecorationi" href="https://www.instagram.com/alf_travelgram/?hl=en" target="_blank">Instagram</a>
@@ -88,7 +93,8 @@
                 <a class="footerlinks_linkDecorationf" href="https://www.facebook.com/AlfMovieOfficial/" target="_blank">Facebook</a>
             </div>
             <div class="bottom_text">
-                <p>Todos los derechos reservados</p>
+                <br>
+                <p><strong>Todos los derechos reservados</strong></p>
             </div>
         </footer>
         <script src="./JS/bootstrap.bundle.min.js"></script>

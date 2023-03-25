@@ -1,17 +1,29 @@
 /*variables*/
+/*utilizo el codigo de abajo tambien para nav*/
 @font-face {
   font-family: "Roboto";
   src: url("../Assets/font/Roboto-Light.ttf");
 }
 body {
   font-family: "Roboto";
-  background-color: rgb(255, 246, 230);
+  background-image: linear-gradient(to top, #9db5c4, #a8c3c8, #bad0cb, #d1dcd1, #e6e7dd);
 }
 
 .container-fluid {
   padding: 0;
 }
 
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 header {
   height: 12vh;
 }
@@ -22,15 +34,27 @@ header .header_navegador {
   padding-right: 2%;
   padding-left: 2%;
   display: inline-block;
+  animation: wiggle 1s;
+  animation-iteration-count: 1;
 }
 header .header_navlinks {
   color: white !important;
   font-weight: bolder !important;
   font-size: x-large;
 }
+header .header_navlinks:hover {
+  color: rgb(83, 82, 82) !important;
+  zoom: 103% !important;
+}
+header .header_navlinks:focus {
+  color: black !important;
+}
+header #gradiente {
+  background-image: linear-gradient(to right top, #0081cf, #00a6dc, #00c4b8, #45da77, #d4e139) !important;
+}
 
 main {
-  background-color: rgb(255, 246, 230);
+  background-color: linear-gradient(to top, #9db5c4, #a8c3c8, #bad0cb, #d1dcd1, #e6e7dd);
   padding-top: 20px;
 }
 main .gradient_main {
@@ -48,7 +72,7 @@ main .column {
 
 footer {
   text-decoration: none;
-  background-color: rgb(255, 246, 230);
+  background-color: linear-gradient(to top, #9db5c4, #a8c3c8, #bad0cb, #d1dcd1, #e6e7dd);
   text-align: center;
   font-size: larger;
 }
@@ -57,6 +81,7 @@ footer .footerlinks {
   padding-left: 2%;
   padding-right: 2%;
   display: inline-block;
+  transform: rotate(-2deg);
 }
 footer .footerlinks .footerlinks_linkDecorationy {
   text-decoration: none;
@@ -65,7 +90,7 @@ footer .footerlinks .footerlinks_linkDecorationy {
   font-weight: bolder;
 }
 footer .footerlinks .footerlinks_linkDecorationy:hover {
-  color: gray;
+  color: rgb(83, 82, 82);
 }
 footer .footerlinks .footerlinks_linkDecorationi {
   text-decoration: none;
@@ -74,7 +99,7 @@ footer .footerlinks .footerlinks_linkDecorationi {
   font-weight: bolder;
 }
 footer .footerlinks .footerlinks_linkDecorationi:hover {
-  color: gray;
+  color: rgb(83, 82, 82);
 }
 footer .footerlinks .footerlinks_linkDecorationf {
   text-decoration: none;
@@ -83,7 +108,7 @@ footer .footerlinks .footerlinks_linkDecorationf {
   font-weight: bolder;
 }
 footer .footerlinks .footerlinks_linkDecorationf:hover {
-  color: gray;
+  color: rgb(83, 82, 82);
 }
 
 .parrafo_index {
@@ -92,6 +117,12 @@ footer .footerlinks .footerlinks_linkDecorationf:hover {
 
 .titulo_bold {
   font-weight: bolder;
+}
+
+#headerlogo {
+  animation-name: efecto_logo !important;
+  animation-duration: 5s !important;
+  animation-delay: 0s !important;
 }
 
 .titulo_formulario {

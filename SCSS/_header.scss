@@ -1,3 +1,14 @@
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 header{
     height: 12vh;
     .header_navegador{
@@ -7,10 +18,22 @@ header{
         padding-right: 2%;
         padding-left: 2%;
         display: inline-block;
+        animation: wiggle 1s;
+        animation-iteration-count: 1;
     }
     .header_navlinks{
         color: white !important;
         font-weight: bolder !important;
         font-size:x-large;
+        &:hover{
+            color: map-get($map: $colorsfooter, $key:"hover")!important;
+            zoom: 103%!important;
+        }
+        &:focus{
+            color: black!important;
+        }
+    }
+    #gradiente{
+    background-image: linear-gradient(to right top, #0081cf, #00a6dc, #00c4b8, #45da77, #d4e139)!important;
     }
 }
