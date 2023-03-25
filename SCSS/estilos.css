@@ -60,6 +60,7 @@ footer .footerlinks {
   padding-left: 2%;
   padding-right: 2%;
   display: inline-block;
+  transform: rotate(-3deg);
 }
 footer .footerlinks .footerlinks_linkDecorationy {
   text-decoration: none;

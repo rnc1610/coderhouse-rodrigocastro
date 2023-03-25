@@ -8,6 +8,7 @@ footer{
         padding-left: 2%;
         padding-right: 2%;
         display:inline-block; 
+        transform: rotate(-3deg);
         .footerlinks_linkDecorationy{
             text-decoration: none;
             color: map-get($map: $colorsfooter, $key:"youtube" );
