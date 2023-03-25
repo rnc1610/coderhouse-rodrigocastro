@@ -2,7 +2,7 @@ main{
     background-color:$color-primario;
     padding-top: 20px;
     .gradient_main{
-        background-color:  #FDD22C;
+        background-image: linear-gradient(to left, #fdd22c, #fdd22c, #fdd22c, #fdd22c, #fdd22c, #fcd339, #fad445, #f9d54f, #f6d764, #f2d978, #efdb8a, #ecdc9c);
         font-size: x-large;
     }
     .row,
