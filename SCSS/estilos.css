@@ -161,6 +161,15 @@ footer .footerlinks .footerlinks_linkDecorationf:hover {
   height: 80%;
 }
 
+#containervid {
+  overflow: hidden;
+}
+#containervid #site {
+  height: 130%;
+  width: 100%;
+  padding-bottom: 15%;
+}
+
 #row_background {
   background-color: #3E7CA3;
 }
@@ -237,10 +246,4 @@ footer .footerlinks .footerlinks_linkDecorationf:hover {
   height: 400px;
   width: 100%;
   border-radius: 12px;
-}
-
-#page {
-  align-items: center;
-  justify-content: center;
-  display: flex;
 }/*# sourceMappingURL=estilos.css.map */
